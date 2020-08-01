@@ -1,5 +1,6 @@
 extern crate exitcode;
 use std::env;
+use std::fs;
 use std::process;
 use serenity::{
     model::{channel::Message, gateway::Ready},
@@ -29,6 +30,7 @@ fn send_message(ctx: &Context, msg: &Message, content: impl std::fmt::Display) {
 }
 
 fn main() {
+    //let
     let args: Vec<_> = env::args().collect();
     if args.len() < 2 {
         println!("No Token provided as argument 1");
