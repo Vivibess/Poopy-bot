@@ -28,7 +28,7 @@ impl EventHandler for Handler {
 }
 fn send_message(ctx: &Context, msg: &Message, content: impl std::fmt::Display) {
     if let Err(why) = msg.channel_id.say(&ctx.http, content) {
-        println!("Err msg: {:?}", why);
+        println!("Err msgadsafsdfgdfghsdfgh: {:?}", why);
     }
 }
 
