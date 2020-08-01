@@ -12,14 +12,10 @@ struct Handler;
 impl EventHandler for Handler {
     fn message(&self, ctx: Context, msg: Message) {
         match msg.content.as_ref() {
-            "!ping" => send_message(&ctx, &msg, "Second Pong"),
+            "!ping" => send_message(&ctx, &msg, "Pong!"),
+            "poop" => send_message(&ctx, &msg, ":poop:"),
             _ => (),
         }
-        // if msg.content == "!ping" {
-        //     if let Err(why) = msg.channel_id.say(&ctx.http, "!ping") {
-        //         println!("Error sending message: {:?}", why);
-        //     }
-        // }
     }
 
     fn ready(&self, _: Context, ready: Ready) {
