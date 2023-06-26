@@ -1,4 +1,4 @@
-# SkeetBot
+# Poopy-bot
 
 Usage is `./bot [TOKEN]`
 
